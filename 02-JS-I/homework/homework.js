@@ -32,6 +32,10 @@ function devolverString(str) {
 }
 
 function suma(x, y) {
+  const numero1 = 1;
+  const numero2 = 1;
+  const suma = numero1 + numero2;
+  return suma;
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
