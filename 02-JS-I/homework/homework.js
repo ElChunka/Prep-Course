@@ -58,12 +58,19 @@ function multiplica(x, y) {
 }
 
 function divide(x, y) {
+  var divide = x / y;
+  return divide;
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
   
 }
 
 function sonIguales(x, y) {
+  if(x === y){
+    return true;
+  }else{
+    return false;
+  }
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -71,6 +78,11 @@ function sonIguales(x, y) {
 }
 
 function tienenMismaLongitud(str1, str2) {
+  if( str1.length === str2.length ){
+    return true;
+  }else{
+    return false;
+  }
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -78,6 +90,11 @@ function tienenMismaLongitud(str1, str2) {
 }
 
 function menosQueNoventa(num) {
+  if( num < 90 ){
+    return true;
+  }else{
+    return false;
+  }
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -85,6 +102,11 @@ function menosQueNoventa(num) {
 }
 
 function mayorQueCincuenta(num) {
+  if( num > 50 ){
+    return true;
+  }else{
+    return false;
+  }
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -92,12 +114,19 @@ function mayorQueCincuenta(num) {
 }
 
 function obtenerResto(x, y) {
+  var divisionResto = x % y;
+  return divisionResto;
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
   
 }
 
 function esPar(num) {
+  if( num % 2 === 0){
+    return true;
+  }else{
+    return false;
+  }
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -105,6 +134,11 @@ function esPar(num) {
 }
 
 function esImpar(num) {
+  if( num % 2 !== 0){
+    return true;
+  }else{
+    return false;
+  }
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -112,6 +146,8 @@ function esImpar(num) {
 }
 
 function elevarAlCuadrado(num) {
+  var num = Math.pow(num,2);
+  return num;
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
@@ -119,36 +155,55 @@ function elevarAlCuadrado(num) {
 }
 
 function elevarAlCubo(num) {
+  var num = Math.pow(num,3);
+  return num;
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   
 }
 
 function elevar(num, exponent) {
+  var num = Math.pow(num, exponent);
+  return num;
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   
 }
 
 function redondearNumero(num) {
+  var num = Math.round(num);
+  return num;
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
   
 }
 
 function redondearHaciaArriba(num) {
+  var num = Math.ceil(num);
+  return num;
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
   
 }
 
 function numeroRandom() {
+  var num = Math.random();
+  return num;
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
   
 }
 
 function esPositivo(numero) {
+  if ( numero === 0){
+    return false;
+  }
+  else if( numero > 0 ){
+    return "Es positivo";
+  }
+  else{
+    return "Es negativo";
+  }
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
@@ -163,6 +218,8 @@ function agregarSimboloExclamacion(str) {
 }
 
 function combinarNombres(nombre, apellido) {
+  var combinacion = nombre + ' ' + apellido;
+  return combinacion;
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
@@ -170,6 +227,8 @@ function combinarNombres(nombre, apellido) {
 }
 
 function obtenerSaludo(nombre) {
+  //var nombre = 'Martin';
+  return 'Hola ' + nombre + '!';
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
