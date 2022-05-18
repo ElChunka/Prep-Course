@@ -50,6 +50,8 @@ function resta(x, y) {
 }
 
 function multiplica(x, y) {
+  var multiplica = x * y;
+  return multiplica;
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
   
